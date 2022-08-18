@@ -30,7 +30,7 @@ parser.add_argument(
     "--dataset", default="WN18RR", choices=["FB15K", "WN", "WN18RR", "FB237", "YAGO3-10"], help="Knowledge Graph dataset"
 )
 parser.add_argument(
-    "--model", default="RotE", choices=all_models, help="Knowledge Graph embedding model"
+    "--model", default="SemigroupE", help="Knowledge Graph embedding model"
 )
 parser.add_argument(
     "--regularizer", choices=["N3", "F2"], default="N3", help="Regularizer"
@@ -104,7 +104,7 @@ parser.add_argument(
     "--learning_rate", default=3e-4, type=float, help="learning rate"
 )
 parser.add_argument(
-    "--pn_loss_ratio", default=50, type=int, help="ration between negative and possitive losses"
+    "--pn_loss_ratio", default=50, type=int, help="ratio between negative and possitive losses"
 )
 parser.add_argument(
     "--inverse_temperature", default=0.1, type=float, help="inverse temperature"
